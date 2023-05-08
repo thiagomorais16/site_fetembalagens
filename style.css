@@ -3,7 +3,7 @@
 body{
     margin: 0px; /*margem externa */
     padding: 0px; /*margem interna */
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     background-image: url(/public/img/fet1.jpg);
@@ -52,13 +52,31 @@ header h4{
 }
 #secao_certificacao ul li{
     display: flex;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
     align-items: center;
     color: #122235;
 }
 #secao_certificacao ul li span{
     color: #bff107;
+    text-decoration: none;
     margin: 0px 10px;
 }
+#secao_certificacao a {
+    text-decoration: none;
+    color: #383838;
+}
+#secao_certificacao li:hover {
+    background-color: #e5e5e5;
+    transform: translateY(-2px);
+    box-shadow: inset 0px -6px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+#secao_certificacaoli:active {
+    transform: translateY(0px);
+    box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+#secao_certificacao
 
 /* seção de video e texto   */
 #secao_video_texto{
