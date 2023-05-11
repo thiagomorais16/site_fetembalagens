@@ -5,10 +5,11 @@ body{
     padding: 0px; /*margem interna */
     font-family: 'Roboto', sans-serif;
 }
-header{
-    background-image: url(/public/img/fet1.jpg);
-    background-size:cover;
-    height: 560px;
+    header{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 50px ;
+    position: fixed;
 }
 #menu{
     padding: 60px;
@@ -34,7 +35,82 @@ header h4{
     font-weight: 400;
     line-height: 150%;
 }
-
+/* cabeçalho */
+.header {
+    height: 400px;
+    position: relative;
+    overflow: hidden; /* impede que as imagens vazem para fora do cabeçalho */
+  }
+  
+  /* carrossel */
+  .slideshow-container {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+  }
+  
+  /* imagens */
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+  }
+  
+  /* botões de navegação */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    padding: 16px;
+    width: auto;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* efeito de fade */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  /* responsividade */
+  @media screen and (max-width: 768px) {
+    .header {
+      height: 250px;
+    }
+    
+    .prev, .next {
+      font-size: 20px;
+      margin-top: -18px;
+      padding: 10px;
+    }
+  }
+  
 /* lista da seção de certificação   */
 
 #secao_certificacao{
@@ -95,8 +171,8 @@ header h4{
     display: flex;
     height: 460px;
     align-items: center;
-    justify-content: center
-    
+    justify-content: center;
+    position: relative;
 }
 #secao_esquerda{
     width: 50%;
