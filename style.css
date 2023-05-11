@@ -38,14 +38,26 @@ header h4{
 /* lista da seção de certificação   */
 
 #secao_certificacao{
-    background: #EAECE5;
-    
+    background: #f5c270;
+    display: flex;
+    width: 100%;
 }
+
+#nav_logo{
+    width: 222px;
+    height: 100px;
+    padding-right: 90px;
+    padding-top: 8px;
+    padding-left: 20px;
+}
+
 #secao_certificacao ul{
     margin: 0px;
     padding: 0px;
-    height: 150px;
+    margin-left: 10px;
+    height: 110px;
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
@@ -55,10 +67,10 @@ header h4{
     transition: background-color 0.2s ease, transform 0.2s ease;
     box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
     align-items: center;
-    color: #122235;
+    color: #323247;
 }
 #secao_certificacao ul li span{
-    color: #bff107;
+    color: #323247;
     text-decoration: none;
     margin: 0px 10px;
 }
@@ -76,9 +88,9 @@ header h4{
     transform: translateY(0px);
     box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.1);
   }
-#secao_certificacao
 
 /* seção de video e texto   */
+
 #secao_video_texto{
     display: flex;
     height: 460px;
@@ -94,6 +106,7 @@ header h4{
 #secao_direita{
     width: 50%;
     padding-left: 50px;
+    justify-content: flex-start;
 }
 #secao_direita h4{
     width: 65%;
@@ -112,7 +125,7 @@ header h4{
 /* seção alunos */
 
 #alunos{
-    background-color: #99a52c;
+    background-color: #f5c270;
     text-align: center;
     padding-top: 20px; 
     height: 300px;
@@ -162,7 +175,7 @@ footer h2{
     padding: 30px;
 }
 footer button{
-    background-color: #99a52c;
+    background-color: #f5c270;
     height: 50px;
     width: 200px;
     color: white;
