@@ -1,54 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustentabilidade</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav id="navegador">
-            
-            <section id="secao_certificacao">
-    
-                <img id="nav_logo" src="/public/img/logo.png" alt="">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sustentabilidade</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav id="secao_certificacao">
+                <img id="nav_logo" src="/public/img/logo.png" alt="" />
                 <ul>
-                    <li><a href="index.html">
-                           Home 
-                    </a>
-                     </li>
+                    <li><a href="index.html"> Home </a></li>
                     <li>
-                        <a href="sobre.html">
-                        Sobre Nós
-                        </a>
+                        <a href="sobre.html"> Sobre Nós </a>
                     </li>
                     <li>
-                        <a href="produtos.html">
-                            Produtos
-                        </a>
+                        <a href="produtos.html"> Produtos </a>
                     </li>
                     <li>
-                        <a href="sustentabilidade.html">
-                            Sustentabilidade
-                        </a>
+                        <a href="sustentabilidade.html"> Sustentabilidade </a>
                     </li>
                     <li>
-                        <a href="noticias.html">
-                            Notícias
-                        </a>
+                        <a href="noticias.html"> Notícias </a>
                     </li>
                     <li>
-                        <a href="contato.html">
-                            Contato
-                        </a>
+                        <a href="contato.html"> Contato </a>
                     </li>
                 </ul>
-        </nav>
-        </div>
-       
-        
-    </header>
-</body>
+            </nav>
+            <div class="header">
+                <div class="slideshow-container" style="height: 100%; width: 400px;">
+                    <div class="mySlides fade">
+                        <img src="/public/img/fet5.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="/public/img/fet6.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="/public/img/fet7.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/public/img/fet8.jpg" style="width:100%">
+                    </div>
+                    <!-- botões de navegação -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <section id="secao_video_texto">
+                <div id="secao_esquerda">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/G8H_YTzlMhc?start=21"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                </div>
+                <div id="secao_direita">
+                    <h4>Sustentabilidade FET EMBALAGENS </h4>
+                    <p> As embalagens de papelão são uma opção sustentável para o armazenamento
+                        e transporte de diversos produtos. Além de serem recicláveis, elas
+                        possuem baixo impacto ambiental durante sua produção.
+                    </p>
+                    <p>
+                        Essas são apenas algumas das muitas embalagens de papelão disponíveis,
+                        cada uma adequada para diferentes tipos de produtos.
+                    </p>
+                    <p>
+                        As embalagens de papelão são feitas a partir de materiais renováveis,
+                        como a celulose, que é obtida
+                    </p>
+                </div>
+            </section>
+            <script src="funcoes.js"></script>
+    </body>
+
 </html>
