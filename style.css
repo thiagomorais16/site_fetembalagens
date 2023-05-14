@@ -31,6 +31,7 @@ header h4 {
   font-weight: 400;
   line-height: 150%;
 }
+
 /* cabeçalho */
 .header {
   height: 400px;
@@ -160,12 +161,62 @@ header h4 {
   transform: translateY(0px);
   box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.1);
 }
+#img_carrosel {
+  width: 100%;
+  right: 180px;
+}
+
+@media screen and (max-width: 1440px) {
+  #secao_certificacao {
+    justify-content: center;
+  }
+
+  #nav_logo {
+    padding-right: 20px;
+  }
+
+  #secao_certificacao ul {
+    justify-content: space-between;
+  }
+
+  #secao_certificacao li span {
+    margin: 0px 5px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #secao_certificacao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav_logo {
+    width: 100%;
+    max-width: 222px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  #secao_certificacao ul {
+    flex-wrap: wrap;
+  }
+
+  #secao_certificacao ul li {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  #secao_certificacao li span {
+    margin: 0px 5px;
+    font-size: 12px;
+  }
+}
 
 /* seção de video e texto   */
 
 #secao_video_texto {
   display: flex;
-  height: 460px;
   align-items: center;
   justify-content: center;
 }
@@ -173,10 +224,11 @@ header h4 {
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  padding-left: 10px;
 }
 #secao_direita {
   width: 50%;
-  padding-left: 50px;
+  padding-left: 70px;
 }
 #secao_direita h4 {
   width: 75%;
@@ -187,7 +239,6 @@ header h4 {
 }
 #secao_direita p {
   width: 75%;
-  font-size: 20px;
   color: #383838;
   line-height: 150%;
   text-align: justify;
@@ -254,6 +305,56 @@ footer button {
 
   cursor: pointer;
 }
+
+@media screen and (max-width: 760px) {
+  #secao_video_texto {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px; /* Adicionado espaço nas laterais */
+  }
+
+  #secao_esquerda {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  #secao_direita {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  #secao_direita h4,
+  #secao_direita p {
+    width: 100%;
+  }
+
+  #alunos {
+    height: auto;
+  }
+
+  #card_group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .card img {
+    margin: 10px;
+    width: 40px; /* Diminuído o tamanho dos ícones */
+    height: 40px; /* Diminuído o tamanho dos ícones */
+  }
+
+  footer {
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
 /* sustentabilidade */
 .animate {
   opacity: 0;
@@ -271,5 +372,81 @@ footer button {
   }
   100% {
     opacity: 1;
+  }
+}
+/* produtos */
+#produtos_texto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 70px;
+  justify-content: space-evenly;
+  padding: 30px 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.carde {
+  width: 190px;
+  height: 254px;
+  border-radius: 30px;
+  background: #eeebeb;
+}
+.carde :hover {
+  box-shadow: 15px 15px 30px rgb(236, 235, 232),
+    -15px -15px 30px rgb(241, 240, 238);
+}
+#carde_img {
+  width: 180px;
+  height: 244px;
+  border-radius: 30px;
+}
+button {
+  background-color: #ffffff;
+  border: 1px solid rgb(209, 213, 219);
+  border-radius: 0.5rem;
+  color: #111827;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-color: #f9fafb;
+}
+
+button:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.1);
+  outline-offset: 2px;
+}
+
+button:focus-visible {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+@media screen and (max-width: 768px) {
+  #produtos_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #carde_img {
+    width: calc(100% - 20px);
+  }
+  .carde {
+    width: calc(100% - 20px);
   }
 }
