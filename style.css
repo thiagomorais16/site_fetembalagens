@@ -34,7 +34,7 @@ header h4 {
 
 /* cabeçalho */
 .header {
-  height: 400px;
+  height: 617px;
   position: relative;
   overflow: hidden; /* impede que as imagens vazem para fora do cabeçalho */
 }
@@ -42,7 +42,7 @@ header h4 {
 /* carrossel */
 .slideshow-container {
   width: 100%;
-  height: 100%;
+  height: 70%;
 }
 
 /* imagens */
@@ -126,9 +126,9 @@ header h4 {
 
 #secao_certificacao ul {
   margin: 0px;
-  padding: 20px;
+  padding: 27px;
   margin-left: 10px;
-  height: 110px;
+  height: 55px;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -161,7 +161,7 @@ header h4 {
   transform: translateY(0px);
   box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.1);
 }
-#img_carrosel {
+#img_carrossel {
   width: 60%;
   right: 100px;
 }
