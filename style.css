@@ -162,8 +162,8 @@ header h4 {
   box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.1);
 }
 #img_carrosel {
-  width: 100%;
-  right: 180px;
+  width: 60%;
+  right: 100px;
 }
 
 @media screen and (max-width: 1440px) {
