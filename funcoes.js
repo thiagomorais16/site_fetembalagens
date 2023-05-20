@@ -33,3 +33,6 @@ function showbotoes(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
+function openMapLocation() {
+  window.open("https://www.google.com/maps/search/?api=1&query=Avenida+Benjamim+de+Paula+Franca,+1138+Vale+Verde,+Valinhos");
+}

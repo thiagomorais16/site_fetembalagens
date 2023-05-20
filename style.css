@@ -36,27 +36,46 @@ header h4 {
 .header {
   height: 617px;
   position: relative;
-  overflow: hidden; /* impede que as imagens vazem para fora do cabeçalho */
+  overflow: hidden;
 }
 
 /* carrossel */
 .slideshow-container {
   width: 99%;
   height: 70%;
+  position: relative; /* adicionando position: relative; */
+}
+
+/* h1 */
+.carousel-title {
+  width: 60%; /* ocupando 40% do carrossel */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 100px;
+  font-weight: bold; /* adicionando negrito */
+  text-transform: uppercase; /* alterando para maiúsculas */
+  letter-spacing: 5px; /* aumentando o espaçamento entre as letras */
+  text-align: start;
+  color: white;
+  font-size: 36px;
+  z-index: 2; /* colocando o h1 acima das imagens (z-index maior) */
 }
 
 /* imagens */
 .mySlides {
   width: 100%;
-  height: 100%;
+  height: 90%;
+  position: relative; /* adicionando position: relative; */
+  z-index: 1; /* definindo z-index das imagens (z-index menor) */
 }
-
 /* botões de navegação */
 .prev,
 .next {
   position: absolute;
   top: 50%;
-  z-index: 1;
+  z-index: 3; /* mantendo os botões acima do h1 */
   padding: 16px;
   width: auto;
   margin-top: -22px;
@@ -105,6 +124,9 @@ header h4 {
     font-size: 20px;
     margin-top: -18px;
     padding: 10px;
+  }
+  .carousel-title {
+    font-size: 24px; /* reduzindo o tamanho da fonte */
   }
 }
 
@@ -161,7 +183,7 @@ header h4 {
   transform: translateY(0px);
   box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.1);
 }
-.img_carrossel {
+#img_carrossel {
   width: 60%;
   right: 100px;
 }
@@ -220,16 +242,19 @@ header h4 {
   align-items: center;
   justify-content: center;
 }
+
 #secao_esquerda {
   width: 50%;
   display: flex;
   justify-content: flex-end;
   padding-left: 10px;
 }
+
 #secao_direita {
   width: 50%;
   padding-left: 70px;
 }
+
 #secao_direita h4 {
   width: 75%;
   font-weight: bold;
@@ -237,6 +262,7 @@ header h4 {
   font-size: 32px;
   color: #247ba0;
 }
+
 #secao_direita p {
   width: 75%;
   color: #383838;
@@ -244,7 +270,77 @@ header h4 {
   text-align: justify;
 }
 
-/* seção alunos */
+/* parte de produtos no index */
+
+.section_index {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  text-align: center;
+}
+
+.h1_prod {
+  font-weight: bold;
+}
+
+.p_prod {
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+.all_cards_index {
+  display: flex;
+  width: 100%;
+  justify-content: space-araund;
+  padding: 29px;
+}
+
+.card_index {
+  width: calc(100% / 3 - 20px);
+  height: 100%;
+  margin-bottom: 30px;
+  background-color: #fcfcfc;
+  padding-top: 15px;
+}
+.h2_prod {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f5c270;
+  margin-bottom: 5px;
+}
+
+.img_prod {
+  width: 307px;
+  height: 213px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f5c270;
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .all_cards_index {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_index {
+    width: calc(100% - 20px);
+  }
+}
+/* section parceiro */
+.parceiro {
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 0.5px;
+}
+/* seção clientes */
 
 #alunos {
   background-color: #f5c270;
@@ -283,26 +379,29 @@ header h4 {
 .nome_aluno {
   font-weight: bold;
 }
-/* seção Footer */
-footer {
-  background-color: #eaece5;
+
+.conheça {
+  background-color: white;
   height: 150px;
   text-align: center;
 }
-footer h2 {
+.conheça_h2 {
   margin: 0px;
   padding: 30px;
 }
-footer button {
+.conheça_button {
   background-color: #f5c270;
   height: 50px;
   width: 200px;
   color: white;
   font-size: 12px;
-
   border-radius: 8px;
   border: 0px;
-
+  cursor: pointer;
+}
+.map-image {
+  width: 360px;
+  height: 225px;
   cursor: pointer;
 }
 
@@ -349,12 +448,8 @@ footer button {
     width: 40px; /* Diminuído o tamanho dos ícones */
     height: 40px; /* Diminuído o tamanho dos ícones */
   }
-
-  footer {
-    height: auto;
-    padding-bottom: 10px;
-  }
 }
+
 /* sustentabilidade */
 .animate {
   opacity: 0;
@@ -449,4 +544,16 @@ button:focus-visible {
   .carde {
     width: calc(100% - 20px);
   }
+}
+/* seção Footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  padding-bottom: 10px;
 }
