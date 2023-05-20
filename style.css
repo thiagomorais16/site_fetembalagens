@@ -48,7 +48,7 @@ header h4 {
 
 /* h1 */
 .carousel-title {
-  width: 40%; /* ocupando 40% do carrossel */
+  width: 70%; /* ocupando 40% do carrossel */
   position: absolute;
   top: 50%;
   left: 0;
