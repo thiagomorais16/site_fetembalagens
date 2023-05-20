@@ -338,14 +338,6 @@ header h4 {
     width: calc(100% - 20px);
   }
 }
-/* section parceiro */
-.parceiro {
-  text-align: center;
-  padding: 20px;
-  letter-spacing: 0.5px;
-  margin: 0 auto;
-  max-width: 1440px;
-}
 
 /* seção clientes */
 
