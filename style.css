@@ -275,7 +275,7 @@ header h4 {
 .section_index {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 10px auto;
   text-align: center;
 }
 
@@ -288,20 +288,24 @@ header h4 {
   letter-spacing: 0.5px;
   font-weight: 400;
 }
+
 .all_cards_index {
   display: flex;
-  width: 100%;
-  justify-content: space-araund;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 29px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .card_index {
-  width: calc(100% / 3 - 20px);
+  flex: 0 1 calc(33.33% - 20px);
   height: 100%;
   margin-bottom: 30px;
   background-color: #fcfcfc;
   padding-top: 15px;
 }
+
 .h2_prod {
   font-size: 20px;
   font-weight: bold;
@@ -339,7 +343,10 @@ header h4 {
   text-align: center;
   padding: 20px;
   letter-spacing: 0.5px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
+
 /* seção clientes */
 
 #alunos {
@@ -384,11 +391,16 @@ header h4 {
   background-color: white;
   height: 150px;
   text-align: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 20px;
 }
+
 .conheça_h2 {
-  margin: 0px;
+  margin: 0;
   padding: 30px;
 }
+
 .conheça_button {
   background-color: #f5c270;
   height: 50px;
@@ -396,8 +408,14 @@ header h4 {
   color: white;
   font-size: 12px;
   border-radius: 8px;
-  border: 0px;
+  border: 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .conheça {
+    width: 100%;
+  }
 }
 .map-image {
   width: 360px;
