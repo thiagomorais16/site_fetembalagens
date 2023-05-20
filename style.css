@@ -59,7 +59,7 @@ header h4 {
   letter-spacing: 1px; /* aumentando o espaçamento entre as letras */
   text-align: start;
   color: white;
-  font-size: 36px;
+  font-size: 50px;
   z-index: 2; /* colocando o h1 acima das imagens (z-index maior) */
 }
 
