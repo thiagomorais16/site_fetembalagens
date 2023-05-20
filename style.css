@@ -172,6 +172,7 @@ header h4 {
 #secao_certificacao a {
   text-decoration: none;
   color: #383838;
+  font-weight: bold;
 }
 #secao_certificacao li:hover {
   background-color: #e5e5e5;
