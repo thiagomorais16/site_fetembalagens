@@ -485,12 +485,12 @@ header h4 {
 #produtos_texto {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-gap: 70px;
   justify-content: space-evenly;
-  padding: 30px 30px;
+  padding: 30px 20px 30px 91px;
   max-width: 1440px;
   margin: 0 auto;
+  background: #f5c270;
 }
 .carde {
   width: 190px;
@@ -506,6 +506,9 @@ header h4 {
   width: 180px;
   height: 244px;
   border-radius: 30px;
+}
+#atendimentos {
+  color: #f5c270;
 }
 button {
   background-color: #ffffff;
@@ -544,6 +547,74 @@ button:focus-visible {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#inputs_section {
+  background-image: url("/img/fet12.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(4, 4, 7, 0.9);
+}
+
+.content {
+  background-color: #ffffff;
+  opacity: 0.9;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecbcb;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+::placeholder {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #f5c270;
+  padding: 3px 5px;
+}
+
+.submit-btn {
+  background-color: #323247;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   #produtos_texto {
     display: flex;
@@ -568,22 +639,41 @@ footer {
 
 #footer {
   display: flex;
-  text-align: center;
+  justify-content: center;
   align-items: center;
-
   margin: 10px;
   background-color: white;
-  width: 150px;
+  max-width: 150px;
   height: 100px;
   text-align: center;
   padding-bottom: 10px;
 }
+
 #footer_h1 {
-  padding: 0px 10px 0px 60px;
+  padding: 0 10px;
 }
+
 .img_footer {
   width: 50px;
   height: 50px;
   padding: 10px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  #footer {
+    flex-direction: row;
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  #footer_h1 {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .img_footer {
+    margin-right: 10px;
+  }
 }
