@@ -121,34 +121,35 @@
                     <h1 id="atendimentos">Solicite um orçamento</h1>
                 </div>
 
-                <div class="form-container">
+                <form action="https://formspree.io/f/mgeqzlqr" method="post" target="_blank" class=" form-container">
                     <div class="form-group">
                         <label for="name"></label>
-                        <input type="text" id="name" required placeholder="Nome">
+                        <input type="text" name="nome" id="name" required placeholder="Nome">
                     </div>
 
                     <div class="form-group">
                         <label for="email"></label>
-                        <input type="email" id="email" required placeholder="Email">
+                        <input type="email" name="email" id="email" required placeholder="Email">
                     </div>
 
                     <div class="form-group">
                         <label for="whatsapp"></label>
-                        <input type="text" id="whatsapp" required placeholder="WhatsApp">
+                        <input type="text" name="numero" id="whatsapp" required placeholder="WhatsApp">
                     </div>
 
                     <div class="form-group">
                         <label for="company"></label>
-                        <input type="text" id="company" required placeholder="Empresa">
+                        <input type="text" name="empresa" id="company" required placeholder="Empresa">
                     </div>
 
                     <div class="form-group">
                         <label for="details"></label>
-                        <textarea id="details" required placeholder="Qual sua Necessidade?"></textarea>
+                        <textarea id="details" name="messagem" required placeholder="Qual sua Necessidade?"></textarea>
                     </div>
 
-                    <button class="submit-btn" onclick="sendEmail()">Enviar</button>
-                </div>
+                    <button type="submit" class="submit-btn">Enviar</button>
+                    <button type="reset" class="submit-btn">Limpar</button>
+                </form>
 
             </div>
         </section>
@@ -183,6 +184,7 @@
                 </a>
             </div>
         </footer>
+        <script src="funcoes.js"></script>
     </body>
 
 </html>
