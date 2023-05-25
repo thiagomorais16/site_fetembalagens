@@ -59,8 +59,47 @@
                 <p>
                 </p>
             </div>
-            <footer id="alunos">
-                <h2>QUAIS OS COMENTÁRIOS DOS CLIENTES</h2>
+            <section id="inputs_section">
+                <div class="content">
+                    <div class="section_index">
+                        <h1 id="atendimentos">Solicite um orçamento</h1>
+                    </div>
+
+                    <form action="https://formspree.io/f/mgeqzlqr" method="post" target="_blank"
+                        class=" form-container">
+                        <div class="form-group">
+                            <label for="name"></label>
+                            <input type="text" name="nome" id="name" required placeholder="Nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" required placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="whatsapp"></label>
+                            <input type="text" name="numero" id="whatsapp" required placeholder="WhatsApp">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company"></label>
+                            <input type="text" name="empresa" id="company" required placeholder="Empresa">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="details"></label>
+                            <textarea id="details" name="messagem" required
+                                placeholder="Qual sua Necessidade?"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Enviar</button>
+                        <button type="reset" class="submit-btn">Limpar</button>
+                    </form>
+
+                </div>
+            </section>
+            <div id="alunos">
                 <div id="card_group">
                     <p style="font-weight: bold; color: white; line-height: 150%;">
                         FET Comércio e Serviços em Embalagens LTDA- ME<br>
@@ -72,16 +111,27 @@
                         tiago@fet.ind.br
                     </p>
 
-                    <div class="card">
-                        <div class="card_body">
-                            <p>"A FET embalagens atende o nosso negócio em tudo que precisamos
-                                em embalagens e caixas para acondicionarmos os alimentos
-                                que entregamos no delivery".</p>
-                            <p class="nome_aluno">A Casa da feijoada</p>
-                        </div>
+                    <div>
+                        <img class="map-image" src="/img//mapa.jpeg" alt="Localização no mapa"
+                            onclick="openMapLocation()">
                     </div>
                 </div>
+            </div>
+            <footer>
+                <h1 id="footer_h1">Redes Sociais</h1>
+                <div id="footer">
+                    <a href="https://instagram.com/fet__embalagens?igshid=MzRlODBiNWFlZA==">
+                        <img src="/img/instagram.svg" class="img_footer" alt="instagram">
+                    </a>
+                    <a href="https://www.facebook.com/tiago.pelegrine.16?mibextid=ZbWKwL">
+                        <img src="/img/facebook.svg" class="img_footer" alt="facebook">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5519988761030" target="_blank">
+                        <img src="/img/whatsapp.svg" class="img_footer" alt="WhatsApp">
+                    </a>
+                </div>
             </footer>
+            <script src="funcoes.js"></script>
     </body>
 
 </html>

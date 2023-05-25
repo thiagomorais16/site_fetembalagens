@@ -30,28 +30,8 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header">
+            <div class="header" id="sustentabilidade">
                 <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <img src="/img/apoiamos a sustentabilidade e uso racional dos recursos naturais..jpg"
-                            alt="sustentabilidade" style="width:100%" class="img_carrossel">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="/img/reciclagem.jpg" alt="embalagens sustentaveis" style="width:100%"
-                            class="img_carrossel">
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="/img/inovacao.jpg" id="img_carrossel" alt="inovacao" style="width:100%"
-                            class="img_carrossel">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="/img/apoiamos.jpg" alt="reutilização" style="width:100%" class="img_carrossel">
-                    </div>
-                    <!-- botões de navegação -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
         </header>
@@ -89,9 +69,7 @@
 
             </section>
             <script src="funcoes.js"></script>
-
-            <footer id="alunos">
-                <h2>QUAIS OS COMENTÁRIOS DOS CLIENTES</h2>
+            <div id="alunos">
                 <div id="card_group">
                     <p style="font-weight: bold; color: white; line-height: 150%;">
                         FET Comércio e Serviços em Embalagens LTDA- ME<br>
@@ -103,16 +81,28 @@
                         tiago@fet.ind.br
                     </p>
 
-                    <div class="card">
-                        <div class="card_body">
-                            <p>"A FET embalagens atende o nosso negócio em tudo que precisamos
-                                em embalagens e caixas para acondicionarmos os alimentos
-                                que entregamos no delivery".</p>
-                            <p class="nome_aluno">A Casa da feijoada</p>
-                        </div>
+                    <div>
+                        <img class="map-image" src="/img//mapa.jpeg" alt="Localização no mapa"
+                            onclick="openMapLocation()">
                     </div>
                 </div>
+            </div>
+            <footer>
+                <h1 id="footer_h1">Redes Sociais</h1>
+                <div id="footer">
+                    <a href="https://instagram.com/fet__embalagens?igshid=MzRlODBiNWFlZA==">
+                        <img src="/img/instagram.svg" class="img_footer" alt="instagram">
+                    </a>
+                    <a href="https://www.facebook.com/tiago.pelegrine.16?mibextid=ZbWKwL">
+                        <img src="/img/facebook.svg" class="img_footer" alt="facebook">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5519988761030" target="_blank">
+                        <img src="/img/whatsapp.svg" class="img_footer" alt="WhatsApp">
+                    </a>
+                </div>
             </footer>
+            <script src="funcoes.js"></script>
+
     </body>
 
 </html>
