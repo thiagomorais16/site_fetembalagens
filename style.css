@@ -610,6 +610,7 @@ button:focus-visible {
   background-size: cover;
   background-position: center;
   background-color: rgba(4, 4, 7, 0.9);
+  background-size: 104% 98%;
 }
 
 @media only screen and (max-width: 600px) {
