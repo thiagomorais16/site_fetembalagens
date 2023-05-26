@@ -612,12 +612,6 @@ button:focus-visible {
   background-color: rgba(4, 4, 7, 0.9);
   background-size: 104% 98%;
 }
-/* MEDIA QUERY */
-@media (max-width: 768px) {
-  #sustentabilidade {
-    background-size: 100% auto;
-  }
-}
 
 @media only screen and (max-width: 600px) {
   .form-container {
