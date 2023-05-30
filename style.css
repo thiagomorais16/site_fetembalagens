@@ -280,7 +280,6 @@ header h4 {
   color: #247ba0;
 }
 .title-sobre {
-  text-align: end !important;
   font-weight: bold;
   cursor: pointer;
 }
@@ -298,6 +297,7 @@ header h4 {
 .caminhão_image {
   width: 461px;
   height: 438px;
+  padding-right: 70px;
 }
 .cor_sobre_nos {
   background-color: #f5c270 !important;
