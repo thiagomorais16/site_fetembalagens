@@ -36,11 +36,3 @@ function showbotoes(n) {
 function openMapLocation() {
   window.open("https://www.google.com/maps/search/?api=1&query=Avenida+Benjamim+de+Paula+Franca,+1138+Vale+Verde,+Valinhos");
 }
-var linksEmbalagensPersonalizadas = document.querySelectorAll('a[href="#embalagens-personalizadas"]');
-
-for (var i = 0; i < linksEmbalagensPersonalizadas.length; i++) {
-  linksEmbalagensPersonalizadas[i].addEventListener('click', function () {
-    // Rastreia o evento de clique no link "Embalagens Personalizadas"
-    ga('send', 'event', 'Links', 'Clique', 'Embalagens Personalizadas');
-  });
-}
