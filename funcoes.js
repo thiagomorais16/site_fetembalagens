@@ -20,8 +20,8 @@ function plusSlides(n) {
 }
 
 function showbotoes(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
   if (n > slides.length) {
     slideIndex = 1;
   }
