@@ -163,9 +163,9 @@ header h4 {
 
 #secao_certificacao ul {
   margin: 0px;
-  padding: 27px;
-  margin-left: 10px;
-  height: 55px;
+  padding: 30px;
+  margin-left: 14px;
+  height: 103px;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
