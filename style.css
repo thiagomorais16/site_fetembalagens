@@ -33,10 +33,39 @@ header h4 {
 }
 
 /* cabeçalho */
-.header {
-  height: 617px;
+.headerr {
+  padding-left: 29px;
+  margin-left: 117px;
+  height: 376px;
+  width: 62%;
   position: relative;
   overflow: hidden;
+}
+.header {
+  height: 311px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .headerr {
+    padding-left: 29px;
+    margin-left: 0;
+    height: 376px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .headerr {
+    padding-left: 29px;
+    margin-left: 117px;
+    height: 376px;
+    width: 62%;
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 /* carrossel */
@@ -63,7 +92,7 @@ header h4 {
   z-index: 2; /* colocando o h1 acima das imagens (z-index maior) */
 }
 .carousel-title-contact {
-  width: 35%; /* ocupando 40% do carrossel */
+  width: 50%; /* ocupando 40% do carrossel */
   position: absolute;
   top: 50%;
   left: 0;
