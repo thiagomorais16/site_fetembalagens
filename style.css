@@ -47,7 +47,27 @@ header h4 {
   position: relative;
   overflow: hidden;
 }
-
+@media (max-width: 768px) {
+  .headerr {
+    padding-left: 29px;
+    margin-left: 0;
+    height: 376px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .headerr {
+    padding-left: 29px;
+    margin-left: 117px;
+    height: 376px;
+    width: 62%;
+    position: relative;
+    overflow: hidden;
+  }
+}
 /* carrossel */
 .slideshow-container {
   width: 99%;
