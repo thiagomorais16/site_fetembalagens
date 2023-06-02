@@ -92,9 +92,9 @@ header h4 {
   z-index: 2; /* colocando o h1 acima das imagens (z-index maior) */
 }
 .carousel-title-contact {
-  width: 35%; /* ocupando 40% do carrossel */
+  width: 70%; /* ocupando 40% do carrossel */
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 0;
   transform: translateY(-50%);
   padding: 10px;
@@ -233,10 +233,16 @@ header h4 {
   width: 60%;
   right: 100px;
 }
+#img_carrossell {
+  right: 500px;
+}
 
 @media screen and (max-width: 1440px) {
   #secao_certificacao {
     justify-content: center;
+  }
+  #img_carrossell {
+    height: 250px;
   }
 
   #nav_logo {
@@ -677,6 +683,10 @@ button:focus-visible {
   .form-container {
     max-width: 100%;
     padding: 0 10px;
+  }
+  #atendimentos {
+    padding-right: 22px;
+    font-size: 20px;
   }
 
   .submit-btn {
