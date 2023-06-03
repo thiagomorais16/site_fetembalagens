@@ -294,7 +294,11 @@ header h4 {
   align-items: center;
   justify-content: center;
 }
-
+#secao_video_textoc {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 #secao_esquerda {
   width: 50%;
   display: flex;
@@ -329,6 +333,13 @@ header h4 {
   line-height: 150%;
   text-align: justify;
 }
+#my-heading {
+  width: 100%;
+  font-weight: bold;
+  line-height: 150%;
+  font-size: 60px !important;
+  color: #247ba0;
+}
 .caminhão_image {
   width: 461px;
   height: 438px;
@@ -338,6 +349,19 @@ header h4 {
   background-color: #f5c270 !important;
 }
 
+@media screen and (max-width: 600px) {
+  #secao_video_textoc {
+    flex-direction: column;
+    text-align: center;
+  }
+  #my-heading {
+    width: 100%;
+    font-weight: bold;
+    line-height: 150%;
+    font-size: 30px !important;
+    color: #247ba0;
+  }
+}
 /* parte de produtos no index */
 
 .section_index {
@@ -705,6 +729,9 @@ button:focus-visible {
   .carde {
     width: calc(100% - 20px);
   }
+}
+.grupo_image {
+  width: 100%;
 }
 /* seção Footer */
 footer {
