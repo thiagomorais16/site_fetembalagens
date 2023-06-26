@@ -269,9 +269,8 @@ header h4 {
   }
 
   #nav_logo {
-    width: 100%;
-    max-width: 100%;
-    max-width: 222px;
+    width: 50%;
+    max-width: 40%;
     padding: 14px;
     box-sizing: border-box;
   }
